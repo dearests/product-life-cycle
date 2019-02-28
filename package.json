@@ -1,0 +1,23 @@
+{
+  "name": "product-life-cycle",
+  "version": "1.0.0",
+  "description": "A system simulation for production life cycle",
+  "main": "exports.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dearests/product-life-cycle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dearests/product-life-cycle/issues"
+  },
+  "homepage": "https://github.com/dearests/product-life-cycle#readme",
+  "dependencies": {
+    "jest": "^24.1.0"
+  }
+}
