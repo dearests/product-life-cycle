@@ -18,11 +18,10 @@ test('testing set product method to return true', () => {
     expect(allExports.Utility.isLastProduct(2)).toBeFalsy()
 });
 
-// test('testing set product method to return true', () => {
-//     data = await allExports.Utility.writeToFile('Product-output', 'Content1\n')
-//     expect().toEqual(data)
-// });
+test('testing set product method to return true', () => {
+    expect(allExports.Utility.writeToFile('Product-output', 'Content1\n')).toBeTruthy()
+});
 
 // test('testing set product method to return false', () => {
-//     expect(allExports.Utility.writeToFile('Product-outpu', 'Content1\n')).toBeFalsy()
+//     expect(allExports.Utility.writeToFile('', 'Content1\n')).toThrowError({ [Error: ENOENT: no such file or directory, open ''] errno: -2, code: 'ENOENT', syscall: 'open', path: '' });
 // });

@@ -19,18 +19,15 @@ class Utility {
     }
 
     writeToFile(path, data, options ='utf8') {
-        new Promise((resolve, reject) => {
-            fs.appendFile(path, data, options, (error) => {
-                if (error) {
-                    reject(error);
-                } else {
-                    resolve();
-                    
-                }
-            })
+        return new Promise((resolve, reject) => {
+            fs.appendFile(path, data, options, this.callback)
         })
     }
-    
+
+    callback(error) {
+        if (error) console.log(error);
+        console.log('success');
+    }
 }
 
 module.exports = new Utility();
